@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Javascript</title>
+    <link rel="icon" type="image/vnd.icon" href="../favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+
+<body>
+    <!--cabecera donde va el menu  nav-->
+    <header>
+        <div class="cabecera">
+            <div class="logo"><img class="camara" src="../asset/images/camara.png" width="150" height="82" alt="logo">
+            </div>
+        </div>
+    </header>
+    <main id="indice">
+        <!--Creo la tabla de precios-->
+        <div>
+        <h2 class="tabla-title"><span class="click"> Pinche aqui</span> para conocer nuestra tarifa</h2>
+        <table id="precios">
+            <caption>Tarifas de precios</caption>
+            <tr>
+                <td>Fotos con album sin fotos digital</td>
+                <td>100 Euros</td>
+            </tr>
+            <tr>
+                <td>Fotos con album digital con fotos en digital</td>
+                <td>150 Euros</td>
+            </tr>
+            <tr>
+                <td>Fotos con album y video sin formato digital</td>
+                <td>200 Euros</td>
+            </tr>
+            <tr>
+                <td>Fotos con album y video con formato digital</td>
+                <td>250 Euros</td>
+            </tr>
+        </table>
+    </div>
+    <div class="descuento">
+        <h3 class="descTitle">Nuestros descuentos dependen de ti <span class="clicke">"Haz click"</span></h3>
+        <ul class="descLista">
+            <li>Si deseas una entrega rapida(entre 1 y 2 meses), nuestro descuento sera del 5% del importe final</li>
+            <li>Si desea que su entrega sea entre 3 y 6 meses, su descuento sera del 10%</li>
+            <li>Si prefiere que su entrega sea entre 7 y 9 meses, entonces su descuento será del 20%</li>
+        </ul>
+    </div>
+        <form action="procesar.php" id="formulario">
+            <fieldset id="datos">
+                <legend>Datos personales</legend>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+                    <small class="error">Escriba su nombre</small>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido">
+                    <small class="error">Escriba su apellido</small>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Telefono de contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Numero de telefono">
+                    <small class="error">Escriba su telefono</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" id="email" name="email" placeholder="Introduzca su email">
+                    <small class="error">Ingrese su email</small>
+                </div>
+            </fieldset>
+            <fieldset id="presu">
+                <legend>Presupuesto</legend>
+                <div class="select">
+                    <label for="option">Seleccione una opcion:</label>
+                    <select id="option" name="option">
+                        <option value="0">-Seleccione una opcion-</option>
+                        <option value="100">Fotos con album sin fotos digital</option>
+                        <option value="150">Fotos con album digital con fotos en digital</option>
+                        <option value="200">Fotos con album y video sin formato digital</option>
+                        <option value="250">Fotos con album y video en formato digital</option>
+                    </select>
+                    <small class="error">Este campo es obligatorio</small>
+                </div>
+                <div class="select">
+                    <label>Seleccione un extra:</label>
+                    <div id="extra">
+                        <label for="extra1">Cuadro en lienzo 40x50 cm</label>
+                        <input type="checkbox" id="extra1" class="extra" name="extra" value="50">
+                        <label for="extra2">Cuadro en lienzo 60x70cm</label>
+                        <input type="checkbox" id="extra2" class="extra" name="extra" value="100">
+                        <label for="extra3">Cuadro en lienzo 80x110cm</label>
+                        <input type="checkbox" id="extra3" class="extra" name="extra" value="150">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="plazo">Plazo de entrega en meses:</label>
+                    <input type="number" id="plazo" name="plazo" min="1" max="9" value="1" step="1">
+                </div>
+                <div class="form-group">
+                    <label for="presupuestoE">Presupuesto estimado:</label>
+                    <input type="text" id="presupuestoE" name="presupuestoE" disabled>
+                </div>
+
+            </fieldset>
+            <fieldset id="terminos">
+                <legend>Aceptacion de condiciones y envio de formulario</legend>
+                <div class="form-group">
+                    <label for="aceptaCond">He leido la politica de privacidad:</label>
+                    <input type="checkbox" id="aceptaCond" name="aceptaCond">
+                    <small class="error">Este campo es obligatorio</small>
+                </div>
+                <button class="enviar" type="submit">Enviar formunlario</button>
+            </fieldset>
+
+        </form>
+
+    </main>
+    <!--pie de pagina-->
+    <footer id="pie">
+        <div id="footer" class="footer">
+        </div>
+
+    </footer>
+    <!--javascript-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="../script/presupuesto.js"></script>
+</body>
+
+</html>

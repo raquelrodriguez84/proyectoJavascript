@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="icon" type="image/vnd.icon" href="./favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Proyecto de Javascript</title>
+</head>
+
+<body>
+    <!--cabecera donde va el nav-->
+    <header>
+        <div class="cabecera">
+            <div class="logo"><img class="camara" src="./asset/images/camara.png" width="150" height="82" alt="logo">
+            </div>
+        </div>
+    </header>
+    <main id="indice">
+        <!--aqui ponemos el carrousel con las for-->
+        <h2 class="slider-title">Lo mejor de nosotros</h2>
+        <div class="slider">
+            <div class="slider-inner">
+                <div class="slider-item">
+                    <img src="./asset/images/cueva.jpg" width="1620" height="756" alt="Cueva del Gato">
+                </div>
+                <div class="slider-item">
+                    <img src="./asset/images/furgo.jpg" width="1620" height="1080" alt="Furgo">
+                </div>
+                <div class="slider-item">
+                    <img src="./asset/images/noche.jpg" width="2266" height="1080" alt="Noche">
+                </div>
+                <div class="slider-item">
+                    <img src="./asset/images/paisaje2webjpg.jpg" width="1350" height="1080" alt="Paisaje">
+                </div>
+                <div class="slider-item">
+                    <img src="./asset/images/puente.jpg" width="1620" height="1080" alt="Puente">
+                </div>
+                <div class="slider-item">
+                    <img src="./asset/images/coche.jpg" width="1350" height="1080" alt="coche">
+                </div>
+            </div>
+            <div class="slider-control">
+                <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        <!--Aqui es donde meterte las etiquetas de presentacion de productos-->
+        <div class="cajaIndex">
+            <div class="cards">
+                <div class="presentacion">
+                    <h2>Camara Nikon</h2>
+                    <img class="foto" src="./asset/images/cameraNikon.jpg" alt="camara fotgrafica" width="1280"
+                        height="823">
+                    <p>La D7200 es toda perfección. El autofoco líder en su categoría, heredado de las legendarias
+                        cámaras profesionales de Nikon, garantiza una adquisición precisa del sujeto de hasta -3 EV. Un
+                        menú específico para configuraciones de vídeo y opciones avanzadas, a fin de que el control de
+                        audio proporcione mayor flexibilidad a los usuarios que graban vídeo. Las funciones para la
+                        fotografía con estelas de luz y los vídeos a intervalos fluidos amplían las opciones creativas,
+                        y los objetivos NIKKOR garantizan una gran riqueza de detalles. La conexión Wi-Fi integrada y la
+                        compatibilidad con NFC facilitan la carga de impresionantes imágenes estáticas.
+                    </p>
+                </div>
+                <div class="presentacion">
+                    <h2>Nueva sony a7 III</h2>
+                    <img class="foto" src="./asset/images/camaraSonic.jpg" alt="camara fotgrafica" width="1280"
+                        height="823">
+                    <p>Tal y como os contamos cuando se anunció la Sony A7 III, los ejecutivos de la firma la
+                        presentaron como el “modelo básico”. Claro que viendo la lista de especificaciones y el precio,
+                        y teniendo la oportunidad de tener una primera toma de contacto con ella, ya nos quedó claro que
+                        no se referían precisamente a que hubieran fabricado algo “sencillo” o “accesible”.
+    
+                    </p>
+                </div>
+                <div class="presentacion">
+                    <h2>Imnovadores objetivos</h2>
+                    <img class="foto" src="./asset/images/objetivos.jpg" alt="camara fotgrafica" width="1280" height="823">
+                    <p>Uno de los usos más cotidianos de una cámara de fotos es la realización de retratos. Fotos de
+                        nuestros seres queridos para tenerlos siempre inmortalizados. Podemos usar cualquiera, pero,
+                        para conseguir los mejores resultados posibles, es conveniente que busquemos un objetivo con
+                        distancia focal fija o con una variación muy pequeña.
+    
+                    </p>
+                </div>
+    
+            </div>
+            <div id="cajaNot" class="cajaNot">
+            </div>
+        </div>
+    </main>
+    <!--pie de pagina-->
+    <footer id="pie" class="footer">
+    </footer>
+    <!--javascript-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./script/index.js"></script>
+    </body>
+    
+    </html>
