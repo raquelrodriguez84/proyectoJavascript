@@ -2,10 +2,10 @@
 export function creaNav(){
     //Creo una constante sera un array que contiene un objeto con el texto de los enlaces y la direccion 
     const navItems = [
-      {text:"INICIO", url: "raquelrodriguez84/proyectoJavascript/index.html", id:"inicio"},
-      {text:"GALERIA", url: "raquelrodriguez84/proyectoJavascript/views/galeria.html", id:"galeria"},
-      {text:"PRESUPUESTO", url:"raquelrodriguez84/proyectoJavascript/views/presupuesto.html",id:"presupuesto"},
-      {text:"CONTACTO", url:"raquelrodriguez84/proyectoJavascript/views/contacto.html", id:"contacto"}
+      {text:"INICIO", url: "/proyectoJavascript/index.html", id:"inicio"},
+      {text:"GALERIA", url: "/proyectoJavascript/views/galeria.html", id:"galeria"},
+      {text:"PRESUPUESTO", url:"/proyectoJavascript/views/presupuesto.html",id:"presupuesto"},
+      {text:"CONTACTO", url:"/proyectoJavascript/views/contacto.html", id:"contacto"}
   ];
     const cabecera = document.querySelector(".cabecera");
     const lista = document.createElement('ul');
