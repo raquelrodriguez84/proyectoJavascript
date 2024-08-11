@@ -361,7 +361,7 @@ function success(position){
 
           }
       }
-  }).addTo(mapa);
+  }).addTo(map);
 
   }
 
