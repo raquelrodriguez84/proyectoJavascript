@@ -307,11 +307,11 @@ function success(position){
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
 
-  let mapa = L.map('mapa',{
+  let map = L.map('mapa',{
       center: [latitude, longitude],
       zoom: 14
   })
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:"Aqui nos puede encontrar"}).addTo(mapa);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:"Aqui nos puede encontrar"}).addTo(map);
 
   //creamos los iconos de inicio medio y final de la ruta 
   let inicio = L.icon(
@@ -368,9 +368,9 @@ function success(position){
 
 function error(){
   //añado el mapa
-  let mapa = L.map('mapa').setView([37.14641,-5.44920],18);
+  let mapaErro = L.map('mapa').setView([37.14641,-5.44920],18);
 // añado un titulo al mapa
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:"Aqui nos puede encontrar"}).addTo(mapa);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:"Aqui nos puede encontrar"}).addTo(mapaErro);
 //añado una marca personalizada la cual cunado pincho me da la direccion de la empresa
   let iconRed = L.icon({
       iconUrl: '../asset/images/leaf.png',
@@ -385,7 +385,7 @@ function error(){
   let popup = L.popup().setLatLng([37.01427, -4.56302]).setContent('Nos puede encontrar en esta direccion:<br> Espalda calle Hacho,nº 8<br>cp:29200 - Antequera <br> Malaga');
   
   //aqui pongo el icono en el mapa 
-  let marker = L.marker([37.01427,-4.56302],{icon: iconRed}).bindPopup(popup).openPopup().addTo(mapa);
+  let marker = L.marker([37.01427,-4.56302],{icon: iconRed}).bindPopup(popup).openPopup().addTo(mapaErro);
 
 
 }
