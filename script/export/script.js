@@ -130,7 +130,7 @@ export function creaNav(){
     divImag.classList = 'divImg';
     const imag = document.createElement('img');
     imag.className = 'logo-pie';
-    imag.src = './asset/images/letrasB.png';
+    imag.src = '../asset/images/letrasB.png';
     imag.alt = 'Logo camara';
     divImag.appendChild(imag);
     pie.appendChild(divImag);
