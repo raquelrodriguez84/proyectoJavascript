@@ -3,9 +3,9 @@ export function creaNav(){
     //Creo una constante sera un array que contiene un objeto con el texto de los enlaces y la direccion 
     const navItems = [
       {text:"INICIO", url: "./index.html", id:"inicio"},
-      {text:"GALERIA", url: "./views/galeria.html", id:"galeria"},
-      {text:"PRESUPUESTO", url:"./views/presupuesto.html",id:"presupuesto"},
-      {text:"CONTACTO", url:"./views/contacto.html", id:"contacto"}
+      {text:"GALERIA", url: "../views/galeria.html", id:"galeria"},
+      {text:"PRESUPUESTO", url:"../views/presupuesto.html",id:"presupuesto"},
+      {text:"CONTACTO", url:"../views/contacto.html", id:"contacto"}
   ];
     const cabecera = document.querySelector(".cabecera");
     const lista = document.createElement('ul');
