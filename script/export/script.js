@@ -19,7 +19,7 @@ export function creaNav(){
       lista.appendChild(navItem);
       link.className = "enlaces";
       //compruebo que la url actual coincide con el enlace 
-      if(window.location.pathname.replace("raquelrodriguez84/proyectoJavascript","")includes(item.url)){
+      if(window.location.pathname.includes(item.url)){
         link.classList.add("active")
       }
     });
