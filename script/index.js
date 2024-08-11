@@ -1,12 +1,12 @@
 /*importo las funciones neceserias barra de navegacion, footer y las funciones para cargar las noticias y crear los
 div para alojar las noticias*/
-import { creaNav, creaFooter } from "script/export/script.js";
+import { creaNav, creaFooter } from "./export/script.js";
 document.addEventListener('DOMContentLoaded', function(){
     creaNav();
     creaFooter();
 });
 
-import {creaNews, cargarNot} from "export/script.js";
+import {creaNews, cargarNot} from "./export/script.js";
 document.addEventListener('DOMContentLoaded', function(){
     creaNews();
     cargarNot();
