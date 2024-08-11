@@ -1,11 +1,11 @@
 //importo las funciones neceserias barra de navegacion, footer y las funciones para sumar el presupuesto y validacion del mismo
-import { creaNav, creaFooter } from "export/script.js";
+import { creaNav, creaFooter } from "./export/script.js";
 document.addEventListener('DOMContentLoaded', function(){
     creaNav();
     creaFooter();
 });
 
-import { validar, sumar} from "export/script.js";
+import { validar, sumar} from "./export/script.js";
 document.addEventListener('DOMContentLoaded', function(){
     const form = document.getElementById('formulario');
     validar(form);
